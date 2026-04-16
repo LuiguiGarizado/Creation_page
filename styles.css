@@ -60,6 +60,7 @@ a{
     text-decoration: none; 
 }
 
+
 nav a:hover {
     color: #ff8c00; 
     text-decoration: underline;
@@ -156,7 +157,7 @@ article img {
 article img:hover {
     transform: translateY(-8px) scale(1.03); 
     border-color: #ff8c00; 
-    box-shadow: 0 12px 25px rgba(1, 42, 82, 0.3); /* Sombra más grande y profunda (con color azul oscuro). */
+    box-shadow: 0 12px 25px rgba(1, 42, 82, 0.3); 
     cursor: pointer;
 }
 
@@ -193,6 +194,16 @@ article img:hover {
 .site-footer :hover {
     text-decoration: underline;
 }
+
+#Projects ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    margin-top: -6px;
+
+}
+
+
 
 @media (max-width: 768px) {
     .pets {
