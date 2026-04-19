@@ -1,26 +1,27 @@
-## Portafolio web
 
-Este repositorio es mi primer sitio web personal. Lo construí mientras aprendo las bases del desarrollo web (HTML y CSS) 
+## Portfolio Project!
 
-## ¿De qué trata este proyecto?
+Hi there! This is my first personal portfolio website. I built this to practice my web development skills and show a bit about who I am, what I like, and the projects I’ve been working on.
 
-Es una página sencilla donde presento quién soy, qué estoy aprendiendo y algunos de los proyectos en los que he estado trabajando.
+## What’s inside?
 
-## El sitio tiene dos partes principales:
+1. About Me: A little section where you can learn about my passion for programming and English. I added a "Click me" button to reveal the text!
+2. Projects: A list of things I've done, including links to my GitHub and a specific HTML course I took.
+3. My Pets: I made a separate page specifically for my pets (Dogs and Cats).
+Contact Form: A simple form where people can reach out to me.
+4. HTML5: For the structure.
+5. CSS3: I used Flexbox and CSS Grid to make it look organized. I also added some media queries to make it responsive (so it looks good on phones too!).
+6. JavaScript: Just some simple scripts to make the buttons interactive and show a welcome message.
 
-1. Perfil Personal: Una introducción sobre mí, mis intereses en la programación y un formulario de contacto.
-2. Mis Mascotas: Una sección especial donde muestro diferentes razas de perros y gatos con una pequeña descripción de su personalidad.
+## Cool Features
 
-##  Tecnologías que usé:
+Hover effects: If you hover over my pet photos, they zoom in a little bit.
+Sticky Header: The navigation bar stays at the top while you scroll.
+Interactive buttons: I used JS to toggle visibility on certain sections to keep the design clean.
 
-HTML5: Para toda la estructura del sitio.
-CSS3: Para darle color y diseño (usé Flexbox y Grid para que se vea ordenado).
-Google Fonts: Para que la letra se vea moderna (usé Inter y Montserrat).
-El diseño es responsive, así que se puede ver bien en celulares (especialmente la parte de las mascotas).
+## How to run it
+Clone this repository or download the files.
+Open index.html in any web browser.
 
-Le puse efectos de "hover" a las imágenes de los animales para que se muevan un poco cuando pasas el mouse.
-
-#  Cómo verlo
-
-Solo tienes que descargar los archivos y abrir el index.html en tu navegador favorito.
-
+> Author: Luigui Garizado.
+> Current goal: Keeping my learning journey going! 
