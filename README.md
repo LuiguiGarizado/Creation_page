@@ -23,5 +23,13 @@ Interactive buttons: I used JS to toggle visibility on certain sections to keep 
 Clone this repository or download the files.
 Open index.html in any web browser.
 
-> Author: Luigui Garizado.
-> Current goal: Keeping my learning journey going! 
+##  Author
+
+* **Name:** Luigui Garizado Cotes
+* **Current Goal:** Keeping my learning journey going every day!
+
+> ###  Project Overview
+
+> This is a learning project where I'm applying my knowledge in **HTML, CSS, and JavaScript**. 
+> My goal was to create a responsive, interactive profile that demonstrates how I handle 
+> data display and user interaction on the web.
