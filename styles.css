@@ -163,7 +163,7 @@ article img:hover {
 
 
 
-.site-footer {
+.footer {
     background-color: #012a52; 
     border-top: 1px solid;
     text-align: center;
@@ -191,7 +191,7 @@ article img:hover {
 
 }
 
-.site-footer :hover {
+.footer :hover {
     text-decoration: underline;
 }
 
@@ -203,10 +203,77 @@ article img:hover {
 
 }
 
+/* =============================================
+   MÓVIL: pantallas de 600px o menos
+   Aquí todo se apila en una sola columna
+   ============================================= */
+@media (max-width: 600px) {
 
+    /* El header se apila verticalmente */
+    header {
+        flex-direction: column;  /* título arriba, menú abajo */
+        padding: 15px 10px;
+    }
 
-@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;  
+    }
+
+    /* El menú de navegación cambia a columna (se apila) */
+    nav ul {
+        flex-direction: column;  /* en vez de fila horizontal, va vertical */
+        gap: 10px;
+        margin-top: 10px;
+        align-items: center;
+    }
+
+    section {
+        margin: 15px 10px;
+        padding: 15px;
+    }
+
+    #Projects ul {
+        grid-template-columns: 1fr;  
+    }
+
+    /* La galería se reduce a 2 columnas */
     .pets {
-        grid-template-columns: 1fr; 
+        grid-template-columns: repeat(2, 1fr);  /* 2 columnas iguales */
+        width: 100%;
+    }
+}
+
+
+/* =============================================
+   TABLET: entre 601px y 1024px
+   Pantallas medianas 
+   ============================================= */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    /* Los proyectos se organizan en 2 columnas */
+    #Projects ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* La galería tiene 3 columnas */
+    .pets {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* =============================================
+   ESCRITORIO: pantallas mayores a 1024px
+   Aquí se mantiene el layout completo
+   ============================================= */
+@media (min-width: 1025px) {
+
+    /* Galería con 3 columnas */
+    .pets {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Proyectos con 2 columnas */
+    #Projects ul {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

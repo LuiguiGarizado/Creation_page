@@ -16,32 +16,37 @@
         </h1>
         <nav> 
             <ul>  
-            <li><a href="#About_me">About me </a></li>
-            <li><a href="#Projects"> Projects </a></li>
-            <li><a href="#Contacts">Contact me</a></li>
-            <li><a href="Mascotas.html" target="_blank">MY pets </a></li>
-
+                <li><a href="#About_me">About me </a></li>
+                <li><a href="#Projects"> Projects </a></li>
+                 <li><a href="#Contacts">Contact me</a></li>
+                <li><a href="Mascotas.html" target="_blank">MY pets </a></li>
+            </ul>
         </nav>
     </header>
 <section id= "About_me">
     <h2>About me</h2>
-    <p>My name is Luigui Garizado Cotes, I like programming, web development and English. 
+    <p id="about-text" style="display:none">My name is Luigui Garizado Cotes, I like programming, web development and English. 
     <br>
     I'm currently studying HTML and CSS, I am passionate about creating responsive and user-friendly websites.
     <br>
     I am eager to keep learning to have a solid knowledge, likewise, I keep learning English to be able
-    to maintain a fluent conversation.</p>
+    to maintain a fluent conversation.
     </p>
+    <button id="btn-about">Click me!</button>
+
 </section>
 
 <section id="Projects">
     <h2>Projects</h2>
     <p> Here are some of the projects I have worked on:</p>
-    <ul>
-    <li> <a href="Mascotas.html" target= "_blank"> Link Pets</a></li>
-    <li> <a href=" https://www.youtube.com/watch?v=EerdGm-ehJQ" target= "_blank"> Course HTML + css</a></li>
-    <li> <a href="https://github.com/dashboard" target= "_blank"> My Git hub Projects </a></li>
-    <li> <a href="https://github.com/SaraTailorA/Synergy-AI" target= "_blank"> SynergyIA Project </a></li>
+
+    <button id="btn-projects">Show projects</button>  
+
+    <ul style="display:none">
+        <li> <a href="Mascotas.html" target= "_blank"> Link Pets</a></li>
+        <li> <a href=" https://www.youtube.com/watch?v=EerdGm-ehJQ" target= "_blank"> Course HTML + css</a></li>
+        <li> <a href="https://github.com/dashboard" target= "_blank"> My Git hub Projects </a></li>
+        <li> <a href="https://github.com/SaraTailorA/Synergy-AI" target= "_blank"> SynergyIA Project </a></li>
     </ul>
 </section>
 
@@ -57,13 +62,13 @@
         <input type="number" required placeholder="Enter your number">
         <label > Message </label>
         <textarea type="message" rows="4"></textarea>
-        <button type="submit">Submit</button>
+        <button type="submit" onclick='alert("Thanks for completing the form, I’ll be contacting you soon. Hope you have a great day!")'>Submit</button>     
     </form>
 
 </section>
-
+    <script src="script.js"></script>
 </body>
-<footer class="site-footer">
+<footer class="footer">
     <p>© 2026 Portafolio. All rights reserved.</p>
 </footer>
 </html>
