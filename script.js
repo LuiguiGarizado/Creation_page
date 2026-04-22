@@ -18,16 +18,17 @@ const projectsList = document.querySelector("#Projects ul");
 const projectsDesc = document.getElementById("projects-description");
 
 const shortDesc = "Here are some of the projects I have worked on:";
-const longDesc = "In these projects, I've used Python, HTML, CSS, and JS. These tasks helped me improve my logic and web design skills.";
+const longDesc = "In these projects, I've used HTML, CSS, and JS. These tasks helped me improve my logic and web design skills.";
 
 projectsBtn.addEventListener("click", function() {
-    if (projectsList.style.display === "grid") {
+    if (projectsList.style.display === "none" || projectsList.style.display === "") {
         projectsList.style.display = "grid";
-        projectsDesc.textContent = longDesc;
-        projectsBtn.textContent = "Hide details";
-    } else {
-        projectsList.style.display = "grid";
-        projectsDesc.textContent = shortDesc;
+        projectsDesc.textContent = longDesc; 
+        projectsBtn.textContent = "Hide projects";
+    } 
+    else {
+        projectsList.style.display = "none";
+        projectsDesc.textContent = shortDesc; 
         projectsBtn.textContent = "Show projects";
     }
 });
