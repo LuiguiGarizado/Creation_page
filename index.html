@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Profile</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header> 
@@ -18,12 +18,13 @@
             <ul>  
                 <li><a href="#About_me">About me </a></li>
                 <li><a href="#Projects"> Projects </a></li>
-                 <li><a href="#Contacts">Contact me</a></li>
+                <li><a href="#Contacts">Contact me</a></li>
                 <li><a href="Mascotas.html" target="_blank">MY pets </a></li>
             </ul>
         </nav>
     </header>
-<section id= "About_me">
+
+<section id="About_me">
     <h2>About me</h2>
     <p id="about-text" style="display:none">My name is Luigui Garizado Cotes, I like programming, web development and English. 
     <br>
@@ -32,40 +33,39 @@
     I am eager to keep learning to have a solid knowledge, likewise, I keep learning English to be able
     to maintain a fluent conversation.
     </p>
-    <button id="btn-about">Click me!</button>
-
+    <button id="btn-about">Learn more about me</button>
 </section>
 
 <section id="Projects">
     <h2>Projects</h2>
-    <p> Here are some of the projects I have worked on:</p>
+    <p id="projects-description">Here are some of the projects I have worked on:</p>
 
     <button id="btn-projects">Show projects</button>  
 
     <ul style="display:none">
         <li> <a href="Mascotas.html" target= "_blank"> Link Pets</a></li>
-        <li> <a href=" https://www.youtube.com/watch?v=EerdGm-ehJQ" target= "_blank"> Course HTML + css</a></li>
-        <li> <a href="https://github.com/dashboard" target= "_blank"> My Git hub Projects </a></li>
-        <li> <a href="https://github.com/SaraTailorA/Synergy-AI" target= "_blank"> SynergyIA Project </a></li>
+        <li> <a href="https://youtube.com" target= "_blank"> Course HTML + css</a></li>
+        <li> <a href="https://github.com" target= "_blank"> My GitHub Projects </a></li>
+        <li> <a href="https://github.com" target= "_blank"> SynergyIA Project </a></li>
     </ul>
 </section>
 
 <section id="Contacts">
     <h2>Contact me</h2>
     <p> If you have any questions or would like to collaborate, feel free to contact me!</p>
-    <form >
-        <label > Name:</label>
-        <input type="text"  required placeholder="Enter your name">
-        <label >Email:</label>
+    <form>
+        <label> Name:</label>
+        <input type="text" required placeholder="Enter your name">
+        <label>Email:</label>
         <input type="email" required placeholder="Enter your email">
-        <label >Phone Number:</label>
+        <label>Phone Number:</label>
         <input type="number" required placeholder="Enter your number">
-        <label > Message </label>
-        <textarea type="message" rows="4"></textarea>
+        <label> Message </label>
+        <textarea rows="4"></textarea>
         <button type="submit" onclick='alert("Thanks for completing the form, I’ll be contacting you soon. Hope you have a great day!")'>Submit</button>     
     </form>
-
 </section>
+
     <script src="script.js"></script>
 </body>
 <footer class="footer">

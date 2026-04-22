@@ -1,38 +1,33 @@
-// =============================================
-// 1. Welcome message
-// =============================================
-alert("Welcome to my portfolio! I hope you enjoy exploring my projects and learning more about me, Let's get started!");
+alert("Hi! Welcome to my portfolio. I hope you enjoy checking out my work. let's get started!");
 
+const aboutBtn = document.getElementById("btn-about");
+const aboutText = document.getElementById("about-text");
 
-// =============================================
-// 2. About me button — shows/hides the text
-// =============================================
-const btn = document.getElementById("btn-about");
-const text = document.getElementById("about-text");
-
-btn.addEventListener("click", function() {
-    if (text.style.display === "none") {
-        text.style.display = "block";
-        btn.textContent = "Click here!";
+aboutBtn.addEventListener("click", function() {
+    if (aboutText.style.display === "none") {
+        aboutText.style.display = "block";
+        aboutBtn.textContent = "Show less";
     } else {
-        text.style.display = "none";
-        btn.textContent = "Show more";
+        aboutText.style.display = "none";
+        aboutBtn.textContent = "Learn more about me";
     }
 });
 
-
-// =============================================
-// 3. Projects button — shows/hides the list
-// =============================================
-const btnProjects = document.getElementById("btn-projects");
+const projectsBtn = document.getElementById("btn-projects");
 const projectsList = document.querySelector("#Projects ul");
+const projectsDesc = document.getElementById("projects-description");
 
-btnProjects.addEventListener("click", function() {
-    if (projectsList.style.display === "none") {
+const shortDesc = "Here are some of the projects I have worked on:";
+const longDesc = "In these projects, I've used Python, HTML, CSS, and JS. These tasks helped me improve my logic and web design skills.";
+
+projectsBtn.addEventListener("click", function() {
+    if (projectsList.style.display === "grid") {
         projectsList.style.display = "grid";
-        btnProjects.textContent = "Hide projects";
+        projectsDesc.textContent = longDesc;
+        projectsBtn.textContent = "Hide details";
     } else {
-        projectsList.style.display = "none";
-        btnProjects.textContent = "Show projects";
+        projectsList.style.display = "grid";
+        projectsDesc.textContent = shortDesc;
+        projectsBtn.textContent = "Show projects";
     }
 });
